@@ -71,12 +71,18 @@ git remote add origin https://github.com/weidongfei/Test.git
 git push -u origin master
 15 把网站上的 连到本地
 16 [plain] view plaincopy
-17
-18
-19
-20
-21
-22
+17 改名文件，并且将这个改名文件放入暂存区的命令
+$ git mv [file-original] [file-renamed]
+18.提交暂存区到仓库的命令
+$ git commit -m [message]
+19.直接从工作区提交到仓库的命令
+$ git commit -a
+20.显示变更信息的命令
+$ git status
+21.查看历史信息的命令
+$ git log
+22.Commit的意义是
+提交
 23 如果事务成功，则提交。COMMIT 语句保证事务的所有修改在数据库中都永久有效。COMMIT 语句还释放资源，如事务使用的锁
 24 git pull：相当于是从远程获取最新版本并merge到本地
 git pull origin master
